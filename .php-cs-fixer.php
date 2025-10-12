@@ -1,9 +1,9 @@
 <?php
 
 /**
- * This file is part of the mimmi20/template package.
+ * This file is part of the mimmi20/browser-detector-versioninterface package.
  *
- * Copyright (c) 2020-2025, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2025, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -17,9 +17,9 @@ use PhpCsFixer\Finder;
 $year = date('Y');
 
 $header = <<<EOF
-    This file is part of the mimmi20/template package.
+    This file is part of the mimmi20/browser-detector-versioninterface package.
 
-    Copyright (c) 2020-{$year}, Thomas Mueller <mimmi20@live.de>
+    Copyright (c) {$year}, Thomas Mueller <mimmi20@live.de>
 
     For the full copyright and license information, please view the LICENSE
     file that was distributed with this source code.
@@ -29,7 +29,6 @@ $finder = Finder::create()
     ->files()
     ->name('*.php')
     ->in(__DIR__ . '/src')
-    ->in(__DIR__ . '/tests')
     ->append([__DIR__ . '/rector.php'])
     ->append([__DIR__ . '/composer-dependency-analyser.php'])
     ->append([__FILE__]);

@@ -112,8 +112,9 @@ parameters:
     no_mixed_property: true
     no_mixed_caller: true
 
-#  ignoreErrors:
-#    - '~MockObject~'
+  ignoreErrors:
+    -
+      identifier: symplify.requiredInterfaceContractNamespace
 
 services:
   errorFormatter.sarif:
